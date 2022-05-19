@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start1": "next start",
-    "start": "next dev",
+    "start": "next start -p $PORT",
     "lint": "next lint",
     "gen": "graphql-codegen --config codegen.yml -r dotenv/config"
   },
