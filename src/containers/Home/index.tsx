@@ -7,7 +7,7 @@ import { Cont, Form, Input, StyP, Wrapper } from "./styles";
 const Home = () => {
   const [input, setInput] = useState("");
 
-  const { data } = useCharsQuery({ variables: { page: 1 } });
+  const { data } = useCharsQuery({ variables: { page: 2 } });
   // const { data } = useStorage();
 
   return (
