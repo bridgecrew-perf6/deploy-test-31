@@ -1,6 +1,5 @@
 import { Field, Form, Formik } from "formik";
 import React from "react";
-import { useRegisterMutation } from "../../generated/graphql";
 
 interface Values {
   name: string;
@@ -9,8 +8,6 @@ interface Values {
 }
 
 const RegisterForm = () => {
-  const [register, { loading, error }] = useRegisterMutation();
-
   // Formik
   const initialValues: Values = {
     name: "",
@@ -19,7 +16,7 @@ const RegisterForm = () => {
   };
 
   const onSubmit = async (values: Values, { resetForm }: any) => {
-    await register({ variables: { ...values } });
+    // await register({ variables: { ...values } });
     resetForm();
   };
 
@@ -38,7 +35,6 @@ const RegisterForm = () => {
           <button type="submit">Submit</button>
         </Form>
       </Formik>
-      {loading && <p>loading...</p>}
     </>
   );
 };
