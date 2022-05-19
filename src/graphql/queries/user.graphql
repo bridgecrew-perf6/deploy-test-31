@@ -1,0 +1,5 @@
+query User($id: ID!) {
+  character(id: $id) {
+    ...CharFrag
+  }
+}

@@ -1,0 +1,7 @@
+fragment CharFrag on Character {
+  id
+  name
+  image
+  status
+  species
+}
