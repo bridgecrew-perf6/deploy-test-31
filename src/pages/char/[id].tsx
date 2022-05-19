@@ -20,7 +20,7 @@ const Char = () => {
       {loading && <div>loading...</div>}
       {data && (
         <div>
-          <StyP> {data.user?.name}</StyP>
+          <StyP> {data.character?.name}</StyP>
         </div>
       )}
     </>
